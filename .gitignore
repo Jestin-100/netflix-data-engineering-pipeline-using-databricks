@@ -48,3 +48,4 @@ mlruns/
 # OS
 .DS_Store
 Thumbs.db
+chore: add professional .gitignore for Databricks projects
