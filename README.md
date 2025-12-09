@@ -1,6 +1,10 @@
 # Netflix Movie Recommendation Engine Databricks Lakehouse
 
-End to end collaborative filtering recommendation system built 100% on Databricks.
+End to end collaborative filtering recommendation system built completely on Databricks.
+
+Most recent Netflix movie data (csv files) extracted from Kaggle and ingested in to databricks unity catalog as volume in the landing schema (raw data ingestion). 
+
+Using medallion architecture, the data goes through 3 level bronze, silver and gold. The volume is converted to databricks delta tables (databricks default table) in the bronze layer, cleaned and transformed in the silver layer and ready for business intelligence, AI/ML in the gold layer for end users.
 
 Spark ALS + Delta Lake + MLflow + Databricks SQL Dashboards + Automated Workflows
 
